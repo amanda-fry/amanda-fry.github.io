@@ -1,0 +1,787 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+<title>AMANDA FRY</title>
+<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+<style>body,html{padding-top:2.5em;margin:0;background-color:#fafafa;}.note{display:block;position:absolute;top:10px;left:10px;font-family:"Open Sans";font-size:0.6em;}.new{background-color:#81C784;border:1px solid #757575;padding:1px;border-radius:4px;}header{width:100%;vertical-align:middle;text-align:center;}.header-content{display:inline-block;}.pic{margin:0 auto;margin-top:-2.5em;border-radius:10em;height:4em;width:4em;border:2px solid #e0e0e0;transition:all 0.5s linear;}@-webkit-keyframes wiggle{0%{transform:rotate(0deg);}25%{transform:rotate(-30deg);}50%{transform:rotate(15deg);}100%{transform:rotate(0deg);}}.pic:hover{-webkit-transform:translateZ(0);cursor:pointer;-webkit-animation:wiggle 0.7s cubic-bezier(0.6,-0.28,0.735,0.045);}.header-text{margin-top:0.5em;margin-left:1em;}header p{text-align:center;font-family:"Merriweather";margin:0;color:#212121;}.first-name{font-size:1.05em;}.subtitle{font-family:"Merriweather";padding-top:.3em;font-size:0.55em;font-weight:500;color:#424242;}.paper{margin:0 auto;margin-bottom:1em;background-color:white;width:60%;padding:0.5em 0 0.5em 0;border-top:1px solid #e0e0e0;border-left:1px solid #e0e0e0;border-right:1px solid #e0e0e0;border-bottom:3px solid #e0e0e0;border-radius:3px;}@media(max-width:992px) {
+  .paper {
+    width:80%;
+  }
+}
+
+/* Content Part */
+
+.content-wrapper {
+  padding-right:7.25%;
+}
+
+.content {
+  display:table;
+  width:100%;
+  
+  padding-top:1.5em;
+  
+  /*border-top: 1px solid #eeeeee;*/
+}
+
+.content:last-child {
+  margin-bottom: 2em;
+}
+
+body > div > article > div > section:last-child {
+  padding-bottom:1.5em;
+}
+
+.row {
+    display:table-row;
+}
+.row div {
+    display:table-cell;
+}
+
+.content-cat {
+  font-family: "Merriweather";
+  font-variant:small-caps;
+  font-weight:300;
+  letter-spacing: 1px;
+  
+  color: #212121;
+  
+  font-size:0.975em;
+  
+  text-align:center;
+  vertical-align:middle;
+
+  padding-left:6.66%;
+  width:30%;
+}
+
+.content-cat p {
+  font-size:0.55em;
+  font-weight:600;
+  
+  margin-bottom:0;
+}
+
+.content-text {
+  border-left:1px solid #e0e0e0;
+  transition: border 0.66s ease-in;
+}
+
+.big-text {
+  vertical-align:top;
+}
+
+.content-text ul {
+  padding:0;
+  margin:0;
+  margin-top:0.15em;
+  
+  width:85%;
+  margin-left:1.5em;
+}
+
+.content-text ul:last-child {
+  margin-bottom:0.5em;
+}
+
+.content-text ul li {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  
+  display:inline-block;
+  
+}
+
+.content-text ul li:first-child {
+  width:35%;
+  
+  color: #424242;
+  
+  font-weight:600;
+}
+
+.content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
+  text-decoration: none;
+  color: #0277bd;
+}
+
+.content-text ul li a:hover {
+  color:#4fc3f7;
+}
+
+.work-listing p {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  
+  color: #424242;
+  
+  margin-left:2em;
+  margin-top:0.45em;
+  margin-bottom: 0.45em;
+}
+
+div.content-text.work-listing.education-listing > p:nth-child(2) {
+  margin-top:0.25em;
+}
+
+.work-listing .highlight {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  font-weight:400;
+  
+  color: #424242;
+  
+  margin-left:3.25em;
+  padding-left:0.5em;
+  
+  border-left:1px solid #e0e0e0;
+  
+}
+
+.education-listing > .heading {
+  font-weight:600;
+  
+  margin-top:0.75em;
+  margin-left:2em;
+}
+
+.education-listing > .highlight {
+  margin-left:3.25em;
+}
+
+.highlight {
+  transition: border .33s ease-in;
+}
+
+.profiles-listing ul li, .profiles-listing ul li:first-child {
+  width:32%;
+  font-weight: normal;
+}
+
+.work-content, .education-content {
+  padding-top: .75em;
+}
+
+section.content.education-content > div > div.content-cat {
+  vertical-align: top;
+}
+
+div.content-text.skills-listing > p {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  font-weight:400;
+
+  margin-left: 2em;
+  margin-top: 0.45em;
+  margin-bottom: 0.45em;
+}
+
+div.content-text.skills-listing > p > {
+  color:#212121;
+}
+
+
+	</style>
+
+	<style media="print">
+	
+body, html {
+  background-color: white;
+  padding-top: 1.5em;
+}
+
+.paper {
+  width:100%;
+  border: 0;
+
+  padding-top: 0;
+}
+
+header p {
+  font-size: 1.3em;
+}
+
+.subtitle {
+  font-size: 0.7em;
+}
+
+.header-pic {
+  float:left;
+}
+
+.profiles {
+  display:none;
+}
+
+.content {
+  page-break-inside:avoid; 
+  page-break-after:auto;
+}
+
+.header-text {
+  float:left;
+  margin-top: -1.6em;
+}
+
+.content-wrapper > .content:first-child {
+  padding-top: 2em;
+}
+
+.content:last-child {
+  padding-bottom: 0;
+}
+
+.content-cat {
+  width:33%;
+  color:black;
+  text-align: left;
+}
+
+.content-cat p {
+  font-size:0.6em;
+  font-weight: 600;
+}
+
+header p, .content-text, .work-listing p, .content-text ul li:first-child, .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
+  color:black;
+}
+
+.content-text.skills-listing > ul > li span, .subtitle {
+  color:#212121;
+}
+
+.content-text ul:last-child {
+  margin-bottom: 0.25em;
+}
+
+.content-text ul li:first-child {
+  width:50%;
+}
+
+.profiles-listing ul li:first-child {
+  width:32%;
+}
+
+div.content-text.skills-listing > ul > li {
+  width:33%;
+}
+
+.work-listing p {
+  margin-bottom: 0.1em;
+}
+
+div.content-text.skills-listing > ul > li > p {
+  margin-top: 0.4em;
+  margin-bottom: 0.5em;
+}
+
+div.content-text.skills-listing > ul > li {
+  padding-left: 1.5em;
+}
+
+div.content-text.skills-listing > ul > li:first-child {
+  padding-left: 2em;
+}
+
+.note {
+  display:none;
+}
+
+.content-text:hover {
+  border-left:1px solid #eeeeee;
+}
+
+.content-text ul li a:hover {
+  color:#4fc3f7;
+}
+
+.highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
+  border-left:1px solid #eeeeee;
+}
+
+.big-text {
+  padding-top: 0;
+}
+	</style>
+	
+	</head>
+	<body>
+	
+	<span class="note">Check out new print view! (<strong>Press Ctrl + P</strong>) (Not available in Live-Editor!)</span>
+
+		<div class="resume-wrapper">
+		  <article class="paper">
+			    <header>
+			      <div class="header-content">
+			        <div class="header-text">
+			          <p>
+			            AMANDA FRY
+			          </p>
+			          <p class="subtitle">Community Outreach ~ Public Awareness ~ Relationship Building</p>
+			        </div>
+			      </div>
+			    </header>
+			    <div class="content-wrapper">
+			    
+			      <!-- CONTACT -->
+			      <section class="content">
+			        <div class="row">
+			          <div class="content-cat">
+			           Contact
+			          </div>
+			          <div class="content-text">
+
+				            <ul>
+				              <li>Email</li>
+				              <li><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="31505743487141524354525e435545585c54421f525e5c">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></li>
+				            </ul>
+
+				            <ul>
+				              <li>Phone</li>
+				              <li>307-220-1236</li>
+				            </ul>
+			          </div>
+			        </div>
+			      </section>
+
+			      <!-- LOCATION -->
+					      <section class="content">
+					        <div class="row">
+					          <div class="content-cat">
+					           Location
+					          </div>
+					          <div class="content-text">
+
+						            <ul>
+						              <li>Address</li>
+						              <li>855 A Gilchrist Ave</li>
+						            </ul>
+
+							            <ul>
+							              <li>Postal Code & City</li>
+							              <li>WY 82201 Wheatland</li>
+							            </ul>
+
+
+					          </div>
+					        </div>
+					      </section>
+
+						
+						<!-- LANGUAGE -->
+
+			      <!-- PROFILES -->
+
+								<section class="content">
+			        <div class="row">
+			          <div class="content-cat big-text">
+											Work	Experience
+			          
+			            		<p>Nov. 2015 till Present</p>
+
+			          </div>
+			          <div class="content-text work-listing education-listing">
+					            <p style="margin-top:2.4em;">
+					            		<strong>Dance Instructor</strong> at <strong>Dance Wyoming:</strong>
+					            </p>
+
+
+												<p class="highlight">Teach class of 10-15 students, ages 12 and up.</p>
+												<p class="highlight">Maintain order in the classroom</p>
+												<p class="highlight">Choreograph and instruct students for final recital</p>
+
+									
+			          </div>
+			        </div>
+			      </section>
+								<section class="content work-content">
+			        <div class="row">
+			          <div class="content-cat big-text">
+			          
+			            		<p>Aug. 2015 till Present</p>
+
+			          </div>
+			          <div class="content-text work-listing education-listing">
+					            <p>
+					            		<strong>Editor</strong> at <strong>Platte County Record-Times:</strong>
+					            </p>
+
+
+												<p class="highlight">Serve as the Editor for a small weekly newspaper</p>
+												<p class="highlight">Manage all websites and social media</p>
+												<p class="highlight">Write articles, cover events, and gather news information for all five communities in Platte County</p>
+												<p class="highlight">Attend government meetings and community events</p>
+												<p class="highlight">Paginate all pages in the newspaper</p>
+												<p class="highlight">Meet all press deadlines</p>
+												<p class="highlight">Oversee staff writers and contributing writers</p>
+
+									
+			          </div>
+			        </div>
+			      </section>
+								<section class="content work-content">
+			        <div class="row">
+			          <div class="content-cat big-text">
+			          
+			            		<p>Aug. 2014 till Present</p>
+
+			          </div>
+			          <div class="content-text work-listing education-listing">
+					            <p>
+					            		<strong>Programmer Secretary</strong> at <strong>City of Cheyenne- Parks and Recreation Division:</strong>
+					            </p>
+
+
+												<p class="highlight">Assist in preparation for adult and youth sports programs</p>
+												<p class="highlight">Recruit coaches for youth sports teams</p>
+												<p class="highlight">Provide the public with resources and information for the Parks and Recreation Division, or direct them to the proper department for assistance</p>
+												<p class="highlight">Address billing issues and questions</p>
+												<p class="highlight">Record transactions and prepare bank deposits each day</p>
+
+									
+			          </div>
+			        </div>
+			      </section>
+								<section class="content work-content">
+			        <div class="row">
+			          <div class="content-cat big-text">
+			          
+			            		<p>Oct. 2010 till Aug. 2013</p>
+
+			          </div>
+			          <div class="content-text work-listing education-listing">
+					            <p>
+					            		<strong>Tutor – Part Time</strong> at <strong>Gear UP Program, Laramie County Community College:</strong>
+					            </p>
+
+
+												<p class="highlight">Work with 7-12th-grade students in preparing for college</p>
+												<p class="highlight">Educate and guide students in finding financial aid, college programs</p>
+												<p class="highlight">Audit paperwork</p>
+												<p class="highlight">Assist with public events held for program</p>
+
+									
+			          </div>
+			        </div>
+			      </section>
+								<section class="content work-content">
+			        <div class="row">
+			          <div class="content-cat big-text">
+			          
+			            		<p>Jun. 2012 till Aug. 2014</p>
+
+			          </div>
+			          <div class="content-text work-listing education-listing">
+					            <p>
+					            		<strong>Customer Service Representative</strong> at <strong>Farmers Insurance Group – Eric Romano Agency:</strong>
+					            </p>
+
+
+												<p class="highlight">Answered questions from customers regarding insurance policies</p>
+												<p class="highlight">Wrote new business for new and existing customers</p>
+												<p class="highlight">Explained products, premiums, and options for customers</p>
+
+									
+			          </div>
+			        </div>
+			      </section>
+								<section class="content work-content">
+			        <div class="row">
+			          <div class="content-cat big-text">
+			          
+			            		<p>Jan. 2010 till May 2012</p>
+
+			          </div>
+			          <div class="content-text work-listing education-listing">
+					            <p>
+					            		<strong>IT Help Desk Proctor</strong> at <strong>Laramie County Community College:</strong>
+					            </p>
+
+
+												<p class="highlight">Addressed technical issues brought to me by students and faculty in computer lab</p>
+												<p class="highlight">Assigned maintenance issues to workers </p>
+
+									
+			          </div>
+			        </div>
+			      </section>
+								<section class="content work-content">
+			        <div class="row">
+			          <div class="content-cat big-text">
+			          
+			            		<p>Nov. 2011 till Jun 2012</p>
+
+			          </div>
+			          <div class="content-text work-listing education-listing">
+					            <p>
+					            		<strong>Videographer- Part time</strong> at <strong>Mountain Regional Services:</strong>
+					            </p>
+
+
+												<p class="highlight">Filmed staff and clients for educational videos</p>
+												<p class="highlight">Edited footage and create DVDs for staff training</p>
+												<p class="highlight">Followed HIPPA regulations regarding confidential information</p>
+
+									
+			          </div>
+			        </div>
+			      </section>
+								<section class="content work-content">
+			        <div class="row">
+			          <div class="content-cat big-text">
+			          
+			            		<p>Aug. 2006 till Aug. 2010</p>
+
+			          </div>
+			          <div class="content-text work-listing education-listing">
+					            <p>
+					            		<strong>Staff Writer/ Assistant Editor</strong> at <strong>Platte County Record-Times:</strong>
+					            </p>
+
+
+												<p class="highlight">Gathered information to write coherent and accurate articles for a weekly newspaper</p>
+												<p class="highlight">Attended meetings, research and find information sources, build a repertoire with local individuals and public officials</p>
+												<p class="highlight">Covered all local sports matches and teams, interview coaches, players</p>
+												<p class="highlight">Photographed events, meetings, sport events and created ads according to customer specifications</p>
+												<p class="highlight">Served as interim editor, or take over editor duties, when needed</p>
+
+									
+			          </div>
+			        </div>
+			      </section>
+
+					
+
+								<section class="content">
+				        <div class="row">
+				          <div class="content-cat big-text">
+
+				            	Education
+
+
+				          </div>
+				          <div class="content-text work-listing education-listing">
+						            <p class="heading" style="margin-top:2.35em;">Bachelor&#x27;s degree through UW</p>
+
+
+				          </div>
+				        </div>
+				      </section>
+								<section class="content education-content">
+				        <div class="row">
+				          <div class="content-cat big-text">
+
+
+
+				          </div>
+				          <div class="content-text work-listing education-listing">
+						            <p class="heading">Laramie County Community College</p>
+
+
+				          </div>
+				        </div>
+				      </section>
+								<section class="content education-content">
+				        <div class="row">
+				          <div class="content-cat big-text">
+
+
+
+				          </div>
+				          <div class="content-text work-listing education-listing">
+						            <p class="heading">PROFESSIONAL ASSOCIATIONS</p>
+
+
+				          </div>
+				        </div>
+				      </section>
+
+				      <section class="content">
+				        <div class="row">
+				          <div class="content-cat big-text">
+				            	Awards
+
+
+				            	<p style="margin-top:0.25em;">2011</p>
+
+				          </div>
+				          <div class="content-text work-listing">
+
+					         		<strong><p class="heading">Winner of the High Plains Register Best Story Award</p></strong>
+
+				          </div>
+				        </div>
+				      </section>
+				      <section class="content">
+				        <div class="row">
+				          <div class="content-cat big-text">
+
+
+				            	<p style="margin-top:0.25em;">2009</p>
+
+				          </div>
+				          <div class="content-text work-listing">
+
+					         		<strong><p class="heading">Winner of a Wyoming Press Association Honorable Mention for article series</p></strong>
+
+				          </div>
+				        </div>
+				      </section>
+				      <section class="content">
+				        <div class="row">
+				          <div class="content-cat big-text">
+
+
+				            	<p style="margin-top:0.25em;">2007</p>
+
+				          </div>
+				          <div class="content-text work-listing">
+
+					         		<strong><p class="heading">Winner of Wyoming Press Association Pacemaker Award in photography</p></strong>
+
+				          </div>
+				        </div>
+				      </section>
+
+			      <section class="content">
+			        <div class="row">
+			          <div class="content-cat">
+			            Skills
+			          </div>
+			          <div class="content-text skills-listing">
+			            	<p>
+			            	<span class="name">
+											<strong>
+											Campaign Development:
+
+											</strong>
+			            	</span>
+
+
+			            	</p>
+			            	<p>
+			            	<span class="name">
+											<strong>
+											Social Media Campaigns:
+
+											</strong>
+			            	</span>
+
+
+			            	</p>
+			            	<p>
+			            	<span class="name">
+											<strong>
+											Media Relations:
+
+											</strong>
+			            	</span>
+
+
+			            	</p>
+			            	<p>
+			            	<span class="name">
+											<strong>
+											Special Event Coordination:
+
+											</strong>
+			            	</span>
+
+
+			            	</p>
+			            	<p>
+			            	<span class="name">
+											<strong>
+											Project Management:
+
+											</strong>
+			            	</span>
+
+
+			            	</p>
+			            	<p>
+			            	<span class="name">
+											<strong>
+											Strategic Planning:
+
+											</strong>
+			            	</span>
+
+
+			            	</p>
+			            	<p>
+			            	<span class="name">
+											<strong>
+											Strategic Messaging:
+
+											</strong>
+			            	</span>
+
+
+			            	</p>
+			            	<p>
+			            	<span class="name">
+											<strong>
+											Exceptional Writing Skills:
+
+											</strong>
+			            	</span>
+
+
+			            	</p>
+			            	<p>
+			            	<span class="name">
+											<strong>
+											Customer Service:
+
+											</strong>
+			            	</span>
+
+
+			            	</p>
+			            	<p>
+			            	<span class="name">
+											<strong>
+											Budget Administration:
+
+											</strong>
+			            	</span>
+
+
+			            	</p>
+			            	<p>
+			            	<span class="name">
+											<strong>
+											Deadline Driven:
+
+											</strong>
+			            	</span>
+
+
+			            	</p>
+			            	<p>
+			            	<span class="name">
+											<strong>
+											Team Leadership:
+
+											</strong>
+			            	</span>
+
+
+			            	</p>
+			          </div>
+			        </div>
+			      </section>
+
+
+		    </div>
+		      
+		  </article>
+		  
+		</div>
+	</body>
+</html>
